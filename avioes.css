@@ -1,0 +1,457 @@
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    display: none;
+}
+
+nav {
+
+    font-size: 200%;
+    text-align: center;
+
+}
+
+nav a {
+    display: block;
+}
+
+.main-nav {
+
+    display: flex;
+
+    list-style-type: none;
+
+    padding: 0px;
+    flex-direction: row;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+
+
+}
+
+header figure,
+header a {
+    margin: 0px 0px;
+    display: flex;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto auto;
+
+
+}
+
+main {
+    font-size: 130%;
+    line-height: 1.5;
+
+
+
+}
+
+main {
+    margin: 1cm;
+}
+
+#menulateral {
+    display: flex;
+
+    list-style-type: none;
+
+    padding: 0px;
+    flex-direction: column;
+    justify-content: center;
+    position: fixed;
+    background-color: rgb(224, 239, 252);
+    border-radius: 10%;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+
+    list-style-type: none;
+
+    padding: 0px;
+    flex-direction: row;
+    margin: 0px;
+
+}
+
+nav li {
+
+    padding: 10px 10px;
+
+
+}
+
+main figure img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+}
+
+dl {
+    text-align: left;
+
+}
+
+dt {
+    font-size: 2rem;
+    color: rgb(0, 0, 119);
+    margin-bottom: 0.5cm;
+    margin-top: 0.5cm;
+}
+
+dd {
+
+    margin: 10px;
+    margin-top: 0.3cm;
+    margin-bottom: 0.3cm;
+
+
+}
+
+.listaAssociados {
+    text-transform: capitalize;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto auto auto;
+    grid-gap: 1px;
+}
+
+
+
+
+
+
+
+a:link,
+a:visited {
+    color: rgb(14, 59, 99);
+
+}
+
+header a:link,
+header a:visited {
+    color: rgb(199, 229, 255);
+    text-indent: 0.5cm;
+
+}
+
+header a:hover,
+.side-nav a:hover,
+main a:hover {
+    color: grey;
+
+}
+
+main a:visited {
+    color: blueviolet;
+}
+
+
+
+
+
+header {
+
+    max-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+
+
+    background-color: darkblue;
+    /* flex-wrap: wrap; */
+}
+
+h2 {
+    max-width: 1200px;
+    display: inline-flex;
+    align-items: end;
+    flex-direction: row-reverse;
+
+
+
+    text-indent: 0.2cm;
+}
+
+h2 img {
+    height: 70px;
+}
+
+
+
+
+
+
+footer a {
+    font-size: 200%;
+    position: fixed;
+
+    bottom: 1cm;
+    right: 1.5cm;
+    background-color: white;
+    padding: 0.2cm 0.5cm;
+    text-align: center;
+    border-radius: 100px 100px;
+    box-shadow: 1px 1px 10px
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header header header header header header header header header"
+
+
+        "menu-2 menu-2 main main main main main main main"
+
+        "footer footer footer footer footer footer footer footer footer";
+    grid-gap: 1px;
+}
+
+header {
+    grid-area: header;
+
+}
+
+.side-nav {
+    grid-area: menu-2;
+
+
+}
+
+main {
+    grid-area: main;
+}
+
+
+footer {
+    grid-area: footer;
+    text-align: center;
+    margin: 1cm;
+
+}
+
+.grid-containerB {
+    display: grid;
+    grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "header header header header header header header header header"
+
+
+        "main main main main main main main main main"
+
+        "footer footer footer footer footer footer footer footer footer";
+    grid-gap: 1px;
+}
+
+
+
+.listaContatos {
+    display: grid;
+    grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas:
+        "morada morada morada morada morada morada morada morada morada"
+
+
+        "tlf tlf tlf tlx tlx tlx tlm tlm tlm"
+
+        "mail mail mail web web web web web web"
+
+    ;
+    grid-gap: 1px;
+}
+
+.morada {
+    grid-area: morada;
+}
+
+.tlf {
+    grid-area: tlf;
+}
+
+.tlx {
+    grid-area: tlx;
+}
+
+.tlm {
+    grid-area: tlm;
+}
+
+.mail {
+    grid-area: mail
+}
+
+.web {
+    grid-area: web
+}
+
+
+
+
+@media screen and (max-width:480px) {
+
+    body {
+        background-color: rgb(213, 236, 255);
+
+    }
+
+    header figure {
+        height: 120px;
+        width: 120px;
+    }
+
+    nav {
+        font-size: larger;
+    }
+
+    header {
+
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    header figure a {
+        width: 120px;
+    }
+    h2{
+        font-size: 1.55192298346em
+    }
+
+    main {
+        max-width: 300px;
+        margin: auto auto;
+    }
+
+    #menulateral {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        flex-wrap: wrap;
+    }
+
+    dt {
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    footer a {bottom: 2.5cm;
+        right: 1.5cm;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "header header header header header header header header header"
+
+
+            "menu-2 menu-2 menu-2 menu-2 menu-2 menu-2 menu-2 menu-2 menu-2"
+
+            "main main main main main main main main main"
+
+            "footer footer footer footer footer footer footer footer footer";
+        grid-gap: 1px;
+    }
+
+    .listaContatos {
+        display: grid;
+        grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "morada morada morada morada morada morada morada morada morada"
+
+
+            "tlf tlf tlf tlf tlf tlf tlf tlf tlf"
+            "tlx tlx tlx tlx tlx tlx tlx tlx tlx"
+            "tlm tlm tlm tlm tlm tlm tlm tlm tlm"
+
+            "mail mail mail mail mail mail mail mail mail"
+            "web web web web web web web web web"
+
+        ;
+        grid-gap: 1px;
+    }
+
+    .listaAssociados {
+        text-transform: capitalize;
+
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 1px;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:992px) {
+    body {
+        background-color: rgb(213, 236, 255);
+        max-width: 755px;
+        margin: auto auto;
+    }
+
+    h2 {
+        font-size: 100%;
+    }
+
+
+
+    nav {
+        font-size: 170%;
+    }
+
+    #menulateral {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        flex-wrap: wrap;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "header header header header header header header header header"
+
+
+            "menu-2 menu-2 menu-2 menu-2 menu-2 menu-2 menu-2 menu-2 menu-2"
+
+            "main main main main main main main main main"
+
+            "footer footer footer footer footer footer footer footer footer";
+        grid-gap: 1px;
+    }
+
+
+}
+
+@media screen and (min-width:993px) {
+    body {
+        background-color: rgb(213, 236, 255);
+    }
+}
